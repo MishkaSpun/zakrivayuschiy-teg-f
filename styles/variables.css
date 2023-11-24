@@ -1,1 +1,17 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    /*цвета*/
+    --light-color: #FFFFFF;
+    --dark-color: #000000;
+    --bright-color: #00CC14;
+    /*типографика*/
+    --font-family-main: 'Inter-Variable', sans-serif;
+    --font-family-accent: 'PressStart2P', fantasy; 
+    /*переменные для тем*/
+    --font-weight-main: 400px;
+    --font-weight__tittle: 700px;
+    --color-background: var(--light-color,  #FFFFFF);
+    --color-text: var(--dark-color, #000000);
+    --color-shadow: var(--light-color, #FFFFFF);
+    --image-background: repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px), linear-gradient( #e7e7e7 0.01%, #1a1a1a); 
+}
