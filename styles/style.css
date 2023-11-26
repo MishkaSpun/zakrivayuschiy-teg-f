@@ -359,12 +359,10 @@
 }
 
  @supports (
-  (-webkit-text-stroke: 1px var(--color-shadow)) or
-    (text-stroke: 1px var(--color-shadow))) {
+  (-webkit-text-stroke: 1px var(--color-shadow))) {
   .card__image-label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--color-shadow);
-    text-stroke: 1px var(--color-shadow);
   }
 }
 
