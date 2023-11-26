@@ -57,7 +57,7 @@
   box-shadow: 2px 2px 0px 0px var(--color-text);
 }
 
-.button::before{
+.button::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -159,9 +159,8 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  inset-inline-start: -16px;
   animation: disabled 0.5s ease-in-out infinite alternate;
-  inset-inline-start: -20px;
+  inset-inline-start: -16px;
   inset-block-start: 0px;
 }
 
