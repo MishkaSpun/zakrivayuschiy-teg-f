@@ -9,6 +9,7 @@
     --light-color: #FFFFFF;
     --dark-color: #000000;
     --bright-color: #00CC14;
+    --color-heart: #FF0000;
     /*типографика*/
     --font-family-main: 'Inter-Variable', sans-serif;
     --font-family-accent: 'PressStart2P', fantasy; 
@@ -19,6 +20,9 @@
     --color-text: var(--dark-color, #000000);
     --color-shadow: var(--light-color, #FFFFFF);
     --image-background: repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px), linear-gradient( #e7e7e7 0.01%, #1a1a1a);
+    /*переменные для анимации*/
+    --color-contour: var(--color-text,#000000);
+    --color-main: var(--color-heart, #FF0000);
 }
 
 :root.theme-dark {
@@ -26,6 +30,7 @@
     --light-color: #FFFFFF;
     --dark-color: #000000;
     --bright-color: #00CC14;
+    --color-heart: #FF0000;
     /*типографика*/
     --font-family-main: 'Inter-Variable', sans-serif;
     --font-family-accent: 'PressStart2P', fantasy; 
@@ -36,14 +41,18 @@
     --color-text: var(--bright-color, #00CC14);
     --color-shadow: var(--bright-color, #00CC14);
     --image-background: repeating-linear-gradient(0deg, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px), linear-gradient( #007f0c, #004306);
+    /*переменные для анимации*/
+    --color-contour: var(--color-text,#00CC14);
+    --color-main: var(--color-heart, #FF0000);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-         /*цвета*/
+    /*цвета*/
     --light-color: #FFFFFF;
     --dark-color: #000000;
     --bright-color: #00CC14;
+    --color-heart: #FF0000;
     /*типографика*/
     --font-family-main: 'Inter-Variable', sans-serif;
     --font-family-accent: 'PressStart2P', fantasy; 
@@ -54,5 +63,8 @@
     --color-text: var(--bright-color, #00CC14);
     --color-shadow: var(--bright-color, #00CC14);
     --image-background: repeating-linear-gradient(0deg, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px), linear-gradient( #007f0c, #004306);
+    /*переменные для анимации*/
+    --color-contour: var(--color-text,#00CC14);
+    --color-main: var(--color-heart, #FF0000);
     }
 }
