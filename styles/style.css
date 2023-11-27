@@ -22,7 +22,7 @@
   place-items: center;
   gap: 100px;
   font-family: var(--font-family-main,sans-serif);
-  font-variation-settings: 'wdth' var(--font-weight-main);
+  font-variation-settings: 'wght' var(--font-weight-main);
   background-color: var(--color-background);
   background-image: var(--image-background);
   background-size: cover;
@@ -159,7 +159,7 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  animation: disabled 0.5s ease-in-out infinite alternate;
+  animation: arrow 0.5s ease-in-out infinite alternate;
   inset-inline-start: -16px;
   inset-block-start: 0px;
 }
@@ -177,7 +177,7 @@
   gap: 50px;
 }
 
-.card__tittle {
+.card__title {
   padding: 3px 10px;
   font-size: 18px;
   line-height: normal;
@@ -293,8 +293,7 @@
 }
 
 .dialog::backdrop {
-  opacity: 0.75;
-  background: var(--dark-color);
+  background-color: rgb(0 0 0 / 0.75)
 }
 
 .dialog__content {
@@ -324,7 +323,7 @@
 
 .contrast {
   filter: contrast(200%);
-  object-fit: fill;
+  object-fit: contain;
 }
 .grayscale {
   filter: grayscale(50%);
@@ -332,10 +331,12 @@
 
 .hue-rotate {
   filter: hue-rotate(0.5turn);
+  object-fit: fill;
 }
 
 .invert {
   filter: invert(100%);
+  object-fit: fill;
 }
 
 .opacity {

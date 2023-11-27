@@ -98,7 +98,7 @@
 }
   
 
-  @keyframes disabled {
+  @keyframes arrow {
     0% {
       inset-inline-start: -16px;
     }
